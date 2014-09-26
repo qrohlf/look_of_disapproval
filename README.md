@@ -1,26 +1,20 @@
 # LookOfDisapproval
 
-TODO: Write a gem description
+Disapprove of things
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'look_of_disapproval'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install look_of_disapproval
+gem install look_of_disapproval
 
 ## Usage
 
-TODO: Write usage instructions here
+In your terminal:
+
+```sh
+disapprove
+# or
+disapprove SOMETHING YOU DISAPPROVE OF
+```
 
 ## Contributing
 

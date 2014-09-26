@@ -2,6 +2,7 @@
 
 require 'erb'
 require 'look_of_disapproval'
+require 'launchy'
 
 LookOfDisapproval::Disapprover.new(ARGV.join(" ")).write('/tmp/disapprove.html')
-`open /tmp/disapprove.html`
+Launchy.open('file:///tmp/disapprove.html')
