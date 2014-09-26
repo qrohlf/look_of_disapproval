@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LOOK OF DISAPPROVAL</title>
+  <style>
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+      text-align: center;
+      min-height: 100%;
+      margin: 0;
+      background: #ecf0f1;
+      color: #222;
+    }
+
+    h1, h2 {
+      margin: 0 0;
+      padding: 16px;
+      line-height: 1;
+      font-weight: normal;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 100px;
+    }
+
+    h2 {
+      margin-top: .5em;
+      font-size: 25px;
+      color: #ecf0f1;
+      background: #34495e;
+      border: solid #2980b9;
+      border-width: 12px 0 12px 0;
+    }
+
+    @media screen and(min-width: 400px) {
+      h1 { font-size: 200px; }
+      h2 { font-size: 50px; }
+    }
+
+    @media screen and(min-width: 800px) {
+      h1 { font-size: 500px; }
+      h2 { font-size: 120px; }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>ಠ_ಠ</h1>
+  <% if @message and @message.length > 0%>
+  <h2><%= @message %></h2>
+  <% end %>
+</body>
+</html>

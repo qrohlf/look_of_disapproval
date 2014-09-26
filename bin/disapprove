@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'erb'
+require 'look_of_disapproval'
+
+LookOfDisapproval::Disapprover.new(ARGV.join(" ")).write('/tmp/disapprove.html')
+`open /tmp/disapprove.html`
