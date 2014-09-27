@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Quinn Rohlf"]
   spec.email         = ["qr@qrohlf.com"]
   spec.summary       = "A utility to disapprove of things"
-  spec.homepage      = "http://qrohlf.com"
+  spec.homepage      = "https://github.com/qrohlf/look_of_disapproval"
   spec.license       = "MIT"
 
   spec.files         = FileList['lib/**/*',
