@@ -4,5 +4,11 @@ require 'erb'
 require 'look_of_disapproval'
 require 'launchy'
 
-LookOfDisapproval::Disapprover.new(ARGV.join(" ")).write('/tmp/disapprove.html')
+def is_emoji?(char)
+  return false if char.nil?
+  char.ord >= 0x1F300 and char.ord <= 0x1F64F
+end
+
+emoji = ARGV.shift if is_emoji?(ARGV.first)
+LookOfDisapproval::Disapprover.new(ARGV.join(" "), emoji).write('/tmp/disapprove.html')
 Launchy.open('file:///tmp/disapprove.html')

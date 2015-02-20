@@ -49,10 +49,14 @@
       h2 { font-size: 120px; }
     }
 
+    .emoji {
+      font-size: 160px;
+    }
+
   </style>
 </head>
 <body>
-  <h1>ಠ_ಠ</h1>
+  <h1 <%= "class='emoji'" if @emoji %>><%= @emoji || "ಠ_ಠ" %></h1>
   <% if @message and @message.length > 0%>
   <h2><%= @message %></h2>
   <% end %>
